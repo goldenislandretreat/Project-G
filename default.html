@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+</head>
+<body>
+    {% include header.html %}
+    <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/#highlights' | relative_url }}">Điểm Nổi Bật</a>
+        <a href="{{ '/#project' | relative_url }}">Dự Án</a>
+        <a href="{{ '/#explore' | relative_url }}">Khám Phá</a>
+        <a href="{{ '/#contact' | relative_url }}">Liên Hệ</a>
+    </nav>
+    <div class="container">
+        {{ content }}
+    </div>
+    {% include footer.html %}
+</body>
+</html>
