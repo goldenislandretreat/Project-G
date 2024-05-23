@@ -1,33 +1,51 @@
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #FBF5D6; /* Cream */
-    color: #333;
+    color: #0D3220; /* Xanh */
 }
 
 header {
-    background-color: #0D3220; /* Xanh */
-    color: #FBF5D6; /* Cream */
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    background-color: #D0A85F; /* Vàng */
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #0D3220; /* Xanh */
+}
+
+header .banner {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
 nav {
     display: flex;
     justify-content: center;
     background-color: #0D3220; /* Xanh */
+    padding: 10px;
 }
 
 nav a {
     color: #FBF5D6; /* Cream */
-    padding: 14px 20px;
+    padding: 10px 20px;
     text-decoration: none;
-    text-align: center;
 }
 
 nav a:hover {
     background-color: #D0A85F; /* Vàng */
+    color: #0D3220; /* Xanh */
 }
 
 .container {
@@ -38,68 +56,55 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-footer {
-    background-color: #0D3220; /* Xanh */
-    color: #FBF5D6; /* Cream */
-    text-align: center;
-    padding: 10px 0;
-}
-
-img.logo {
-    width: 200px;
-    height: auto;
-}
-
-h2 {
+.section h2 {
+    font-size: 2em;
     color: #0D3220; /* Xanh */
 }
 
-h3 {
-    color: #D0A85F; /* Vàng */
+.section p {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
-p, ul {
-    line-height: 1.6;
+ul {
+    list-style-type: square;
+    padding-left: 20px;
 }
 
 form {
-    margin-top: 20px;
+    background-color: #FFF;
+    padding: 20px;
+    border: 1px solid #D0A85F; /* Vàng */
+    border-radius: 5px;
 }
 
-form label {
+form label, form input, form textarea {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
+form input, form textarea {
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #D0A85F; /* Vàng */
     border-radius: 5px;
 }
 
 form input[type="submit"] {
-    background-color: #0D3220; /* Xanh */
-    color: #FBF5D6; /* Cream */
-    padding: 10px 20px;
+    background-color: #D0A85F; /* Vàng */
+    color: #0D3220; /* Xanh */
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background-color: #D0A85F; /* Vàng */
+    background-color: #0D3220; /* Xanh */
+    color: #FBF5D6; /* Cream */
 }
 
-a {
-    color: #0D3220; /* Xanh */
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0D3220; /* Xanh */
+    color: #FBF5D6; /* Cream */
 }
