@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -41,6 +42,7 @@ nav a {
     color: #FBF5D6; /* Cream */
     padding: 10px 20px;
     text-decoration: none;
+    margin: 0 10px;
 }
 
 nav a:hover {
@@ -71,6 +73,7 @@ ul {
     padding-left: 20px;
 }
 
+/* Form Styles */
 form {
     background-color: #FFF;
     padding: 20px;
@@ -102,9 +105,44 @@ form input[type="submit"]:hover {
     color: #FBF5D6; /* Cream */
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
     background-color: #0D3220; /* Xanh */
     color: #FBF5D6; /* Cream */
+}
+
+/* Button Styles for Backlinks */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #FBF5D6; /* Cream */
+    background-color: #0D3220; /* Xanh */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #D0A85F; /* Vàng */
+    color: #0D3220; /* Xanh */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
 }
