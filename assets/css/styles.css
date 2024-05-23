@@ -1,33 +1,53 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #FBF5D6; /* Cream */
-    color: #333;
+    color: #0D3220; /* Xanh */
 }
 
 header {
-    background-color: #0D3220; /* Xanh */
-    color: #FBF5D6; /* Cream */
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    background-color: #0D3220; /* Xanh, trùng với màu logo */
+}
+
+header .logo {
+    width: 100px;
+    height: auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #FBF5D6; /* Cream */
+}
+
+header .banner {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
 nav {
     display: flex;
     justify-content: center;
     background-color: #0D3220; /* Xanh */
+    padding: 10px;
 }
 
 nav a {
     color: #FBF5D6; /* Cream */
-    padding: 14px 20px;
+    padding: 10px 20px;
     text-decoration: none;
-    text-align: center;
+    margin: 0 10px;
 }
 
 nav a:hover {
     background-color: #D0A85F; /* Vàng */
+    color: #0D3220; /* Xanh */
 }
 
 .container {
@@ -38,84 +58,92 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-footer {
-    background-color: #0D3220; /* Xanh */
-    color: #FBF5D6; /* Cream */
-    text-align: center;
-    padding: 10px 0;
-}
-
-img.logo {
-    width: 200px;
-    height: auto;
-}
-
-h2 {
-    color: #0D3220; /* Xanh */
-}
-
-h3 {
+.section h2 {
+    font-size: 2em;
     color: #D0A85F; /* Vàng */
 }
 
-p, ul {
-    line-height: 1.6;
+.section p {
+    font-size: 1.2em;
+    margin: 10px 0;
 }
 
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Form Styles */
 form {
-    margin-top: 20px;
+    background-color: #FFF;
+    padding: 20px;
+    border: 1px solid #D0A85F; /* Vàng */
+    border-radius: 5px;
 }
 
-form label {
+form label, form input, form textarea {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
+form input, form textarea {
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #D0A85F; /* Vàng */
     border-radius: 5px;
 }
 
 form input[type="submit"] {
-    background-color: #0D3220; /* Xanh */
-    color: #FBF5D6; /* Cream */
-    padding: 10px 20px;
+    background-color: #D0A85F; /* Vàng */
+    color: #0D3220; /* Xanh */
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background-color: #D0A85F; /* Vàng */
+    background-color: #0D3220; /* Xanh */
+    color: #FBF5D6; /* Cream */
 }
 
-a {
-    color: #0D3220; /* Xanh */
-    text-decoration: none;
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0D3220; /* Xanh */
+    color: #FBF5D6; /* Cream */
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.social-icons a {
-    margin: 0 10px;
+/* Button Styles for Backlinks */
+.button {
     display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-size: 1.1em;
+    color: #FBF5D6; /* Cream */
+    background-color: #0D3220; /* Xanh */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.social-icons img {
-    width: 40px;
-    height: 40px;
+.button:hover {
+    background-color: #D0A85F; /* Vàng */
+    color: #0D3220; /* Xanh */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+
